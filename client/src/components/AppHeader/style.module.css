@@ -1,0 +1,98 @@
+.header_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.telegram_button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 126px;
+  height: 30px;
+  background-color: white;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.telegram_button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.telegram_button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.telegram_text {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+.button_close {
+  width: 87px;
+  height: 30px;
+  background-color: rgba(198, 198, 198, 0.3);
+  border-radius: 20px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #666666;
+  gap: 5px;
+}
+
+.button_more {
+  width: 64px;
+  height: 30px;
+  background-color: rgba(198, 198, 198, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button_more img {
+  fill: #666666;
+}
+
+@media (max-width: 600px) {
+  .header_container {
+    width: 590px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .header_container {
+    width: 415px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .header_container {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
